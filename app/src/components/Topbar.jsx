@@ -22,7 +22,7 @@ export default class Logout extends React.Component {
     
     render() {
         let logoutWrap = {
-            margin: '15px 20px 0 0',
+            margin: '7px 20px 0 0',
             width: '100px',
             textAlign: 'right',
             float: 'right',
@@ -32,7 +32,7 @@ export default class Logout extends React.Component {
             <div style={logoutWrap}>
                 <Dropdown overlay={menu}>
                     <a className="ant-dropdown-link">
-                        <img src={require('../images/head.jpg')} />
+                        <img src={require('../images/head.jpg')} style={{width: 35, height: 35, borderRadius: '50%'}} />
                         {/*Hi Jason &nbsp;&nbsp;<Icon type="down" />*/}
                     </a>
                 </Dropdown>
