@@ -11,8 +11,11 @@
 项目克隆到本地后：
 
 > 安装Yarn  $ npm install -g yarn
+>
 > 安装依赖  $ yarn
+>
 > 启动服务  $ yarn start
+>
 > 打包文件  $ yarn build
 
 当然用不惯yarn的也可以使用npm install,npm start,npm run build...  
