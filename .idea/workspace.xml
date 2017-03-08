@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0d6ac41-84e2-4e64-be85-dd2a6bcdeb3c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/components/Topbar.jsx" afterPath="$PROJECT_DIR$/app/src/components/Topbar.jsx" />
-    </list>
+    <list default="true" id="e0d6ac41-84e2-4e64-be85-dd2a6bcdeb3c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -461,12 +459,12 @@
       <workItem from="1488507262158" duration="6496000" />
       <workItem from="1488522799098" duration="664000" />
       <workItem from="1488524571881" duration="12167000" />
-      <workItem from="1488786626554" duration="26867000" />
+      <workItem from="1488786626554" duration="27439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49711000" />
+    <option name="totallyTimeSpent" value="50283000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
