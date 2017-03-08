@@ -28,6 +28,7 @@ class NormalLoginFrom extends React.Component {
                             notification.open({
                                 message: e.msg,
                                 description: '',
+                                duration: 2,
                                 icon: <Icon type="check-circle-o" style={{ color: '#00a854' }} />,
                             });
                             // 路由处理 跳转首页
@@ -37,6 +38,7 @@ class NormalLoginFrom extends React.Component {
                             notification.open({
                                 message: e.msg,
                                 description: '',
+                                duration: 2,
                                 icon: <Icon type="exclamation-circle-o" style={{ color: '#ffbf00' }} />,
                             });
                         }

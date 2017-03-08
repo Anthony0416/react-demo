@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Nav from './components/Nav.jsx'
+import Nav from './components/Nav.jsx';
+import $ from 'jquery';
+import { browserHistory } from 'react-router';
 
 // 引入垫片兼容IE
 require('es5-shim');
@@ -15,7 +17,24 @@ import './less/main.less';
 export default class Init extends React.Component {
     constructor(props) {
         super(props);        
-    } 
+    }
+
+    componentDidMount() {
+        // 判断登录
+        // $.ajax({
+        //     url: 'http://www.lingyun.party/app2/api/checkLogin',
+        //     type: 'GET',
+        //     success: (e) => {
+        //         console.log(e)
+        //         if (e.code == 1) {
+        //
+        //         } else {
+        //             document.cookie = "nowKey=" + "login";
+        //             browserHistory.push('/login');
+        //         }
+        //     }
+        // })
+    }
 
     render() {
         return (
