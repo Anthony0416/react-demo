@@ -4,15 +4,7 @@ import { browserHistory } from 'react-router';
 import { Menu, Dropdown, notification, Icon } from 'antd';
 
 const click = ({key}) => {
-    if (key == 1) {
-        // 路由处理
-        document.cookie = "nowKey=" + "user";
-        browserHistory.push('/user');
-    } else if (key == 2) {
-        // 路由处理
-        document.cookie = "nowKey=" + "setting";
-        browserHistory.push('/setting');
-    } else if (key == 3) {
+    if (key == 3) {
         $.ajax({
             url: 'http://www.lingyun.party/app2/api/logout',
             type: 'GET',
@@ -25,7 +17,7 @@ const click = ({key}) => {
                         duration: 2,
                         icon: <Icon type="check-circle-o" style={{ color: '#00a854' }} />,
                     });
-                    // 路由处理
+                    // 路由处理 跳转首页
                     document.cookie = "nowKey=" + "login";
                     browserHistory.push('/login');
                 } else {
@@ -43,8 +35,12 @@ const click = ({key}) => {
 
 const menu = (
   <Menu onClick={click}>
-    <Menu.Item key="1">用户中心</Menu.Item>
-    <Menu.Item key="2">系统配置</Menu.Item>
+    <Menu.Item key="1">
+      <a href="/user">用户中心</a>
+    </Menu.Item>
+    <Menu.Item key="2">
+      <a href="/setting">系统配置</a>
+    </Menu.Item>
     <Menu.Item key="3">退出登陆</Menu.Item>
   </Menu>
 );

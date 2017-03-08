@@ -22,7 +22,7 @@ export default class Init extends React.Component {
     componentDidMount() {
         // 判断登录
         // $.ajax({
-        //     url: 'http://www.lingyun.party/app2/api/checkLogin',
+        //     url: 'http://www.lingyun.party:666/app2/api/checkLogin',
         //     type: 'GET',
         //     success: (e) => {
         //         console.log(e)

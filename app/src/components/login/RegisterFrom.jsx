@@ -31,7 +31,7 @@ class NormalRegisterFrom extends React.Component {
                 let p = values.password;
                 let r = values.repassword;
                 $.ajax({
-                    url: 'http://www.lingyun.party/app2/api/showSignup',
+                    url: 'http://www.lingyun.party:666/app2/api/showSignup',
                     type: 'POST',
                     data: 'yourinviteCode=' + l + '&username=' + n + '&password=' + p + '&passwordRepeat=' + r,
                     success: (e) => {
@@ -41,6 +41,7 @@ class NormalRegisterFrom extends React.Component {
                             notification.open({
                                 message: e.msg,
                                 description: '',
+                                duration: 2,
                                 icon: <Icon type="check-circle-o" style={{ color: '#00a854' }} />,
                             });
                             // 路由处理 跳转首页
@@ -50,6 +51,7 @@ class NormalRegisterFrom extends React.Component {
                             notification.open({
                                 message: e.msg,
                                 description: '',
+                                duration: 2,
                                 icon: <Icon type="exclamation-circle-o" style={{ color: '#ffbf00' }} />,
                             });
                         }

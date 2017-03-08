@@ -19,7 +19,7 @@ class NormalLoginFrom extends React.Component {
                 let n = values.username;
                 let p = values.password;
                 $.ajax({
-                    url: 'http://www.lingyun.party/app2/api/showSignin',
+                    url: 'http://www.lingyun.party:666/app2/api/showSignin',
                     type: 'POST',
                     data: 'username=' + n + '&password=' + p,
                     success: (e) => {
