@@ -1,6 +1,6 @@
 ## 项目框架
 
-在做自己第一个项目之前寻找对比了很多框架，最后感觉这个框架不论结构还是内容，都比较适合新手去快速上手React。源框架Github：[React-seed](https://github.com/JasonBai007/react-seed)
+在做这个项目之前寻找对比了很多框架，最后感觉这个框架不论结构还是内容，都比较适合新手去快速上手React。源框架Github：[React-seed](https://github.com/JasonBai007/react-seed)
 
 ### 熟悉框架
 
