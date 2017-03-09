@@ -8,9 +8,9 @@ module.exports = {
         vendors:['react','react-dom','react-router']  //抽取公共框架
     },
     output: {
-        path: __dirname + '/app/dist',
+        path: __dirname + '/app',
         publicPath:'/',  //事实上，这个配置直接影响了图片的输出路径
-        filename: 'js/bundle.js'
+        filename: 'dist/js/bundle.js'
     },
     module: {
         loaders: [
@@ -25,8 +25,8 @@ module.exports = {
         extensions: ['', '.js', '.jsx']
     },
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin('vendors','js/vendors.js'),
-        new ExtractTextPlugin("css/bundle.css"),
+        new webpack.optimize.CommonsChunkPlugin('vendors','dist/js/vendors.js'),
+        new ExtractTextPlugin("dist/css/bundle.css"),
         new webpack.ProvidePlugin({ $: "jquery" }),
         // 压缩配置
         new webpack.optimize.UglifyJsPlugin({
