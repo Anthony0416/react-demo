@@ -27,7 +27,7 @@ export default class Login extends React.Component {
 
     render() {
         return (
-            <div id="loginpagewrap" style={{backgroundImage: 'url("dist/img/bg.jpg")'}}>
+            <div id="loginpagewrap">
                 <p>Welcome to website</p>
                 <div id="loginWrap">
                     <div id="form"></div>

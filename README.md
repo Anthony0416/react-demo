@@ -18,7 +18,7 @@
 >
 > 打包文件  $ yarn build
 
-当然用不惯yarn的也可以使用npm install,npm start,npm run build...  
+第一次使用yarn安装依赖会经常报错，而这多是网络问题（毕竟facebook出的yarn，摊手），可以多试几次，而在以后安装时由于yarn的离线性，速度会巨快 。当然用不惯yarn的也可以使用npm install,npm start,npm run build...
 
 但是这里还是**强烈推荐使用yarn**，媲美cnpm的速度，npm一样的强大，打包速度还比npm快...
 
@@ -52,4 +52,6 @@
 
 webpack中图片配置路径为dist/img/[name].[ext]，在实际打包中，因为react的虚拟Dom插入到index.html中，所以这样的路径相当于站在index的当前目录去寻找dist/img，当然能找到。但是css样式被打包成bundle.css放在dist/css目录下，而写在less中的background-image的实际寻找路径就变成了从当前目录出发的dist/css/dist/img...，所以会出现找到不图片的原因。
 
-解决方案，使用内联样式style={{backgroundImage: '../images/name.jpg'}}把图片放在虚拟Dom中。
+解决中尝试使用内联样式将backgroundImage放在jsx中，但是发现webpack打包时忽略了！即便尝试手动拷贝图片到dist/img，save一下热加载再次打包图片又没了！
+
+后来尝试改变webpack配置，将publicPath路径修改为/，在loaders的图片配置将输出路径改为./dist/img/[name]的绝对路径，居然成功了。打包后的文件目录变成了奇怪的dist/dist/img，而background-image路径为/./dist/img/bg.img的绝对路径，我尝试使用dist/img和dist/dist/img发现都能找到图片 -_-|||大汗 ，最终以一个奇怪的姿势解决了这个问题╮(╯▽╰)╭。
