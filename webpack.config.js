@@ -29,7 +29,7 @@ module.exports = {
     },
     output: {
         publicPath: '/',
-        filename: 'js/bundle.js'
+        filename: 'dist/js/bundle.js'
     },
     module: {
         loaders: [
@@ -44,8 +44,8 @@ module.exports = {
         extensions: ['', '.js', '.jsx']
     },
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin('vendors','js/vendors.js'),
-        new ExtractTextPlugin("css/bundle.css"),
+        new webpack.optimize.CommonsChunkPlugin('vendors','dist/js/vendors.js'),
+        new ExtractTextPlugin("dist/css/bundle.css"),
         new webpack.ProvidePlugin({ $: "jquery" }),
         new webpack.HotModuleReplacementPlugin(),
         new OpenBrowserPlugin({ url: 'http://localhost:8080/' })
