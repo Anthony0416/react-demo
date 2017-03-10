@@ -36,7 +36,7 @@ const click = ({key}) => {
 const menu = (
   <Menu onClick={click}>
     <Menu.Item key="1">
-      <a href="/user">用户中心</a>
+      <a href="/register">用户中心</a>
     </Menu.Item>
     <Menu.Item key="2">
       <a href="/setting">系统配置</a>

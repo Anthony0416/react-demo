@@ -5,6 +5,7 @@ import { Router, Route, IndexRoute, Redirect, browserHistory } from 'react-route
 // 引入单个页面（包括嵌套的子页面）
 import Init from './main';
 import Login from './pages/login';
+import Register from './pages/register'
 import Home from './pages/home';
 import User from './pages/user';
 import Setting from './pages/setting';
@@ -16,6 +17,7 @@ import NotFoundPage from './pages/nofind';
 ReactDOM.render(
     <Router history={browserHistory} >        
         <Route path="/login" component = {Login} />
+        <Route path="/register" component = {Register} />
         <Route path="/" component={Init} >
             <IndexRoute component={Home}/>
             <Route path="user" component={User}/>
@@ -27,6 +29,6 @@ ReactDOM.render(
             {/* 其他重定向到 404 */}
             <Redirect from='*' to='404' />
         </Route>
-    </Router>
-    , document.querySelector('#init')
+    </Router>,
+    document.querySelector('#init')
 )
