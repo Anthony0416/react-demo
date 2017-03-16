@@ -1,30 +1,47 @@
+## react入门教程
+
 #### react简介
 
-[百度百科](http://baike.baidu.com/item/react/18077599)
+React 起源于 Facebook 的内部项目，因为该公司对市场上所有 JavaScript MVC 框架，都不满意，就决定自己写一套，用来架设Instagram 的网站。做出来以后，发现这套东西很好用，就在2013年5月开源了。
 
-一些好的学习途径：
+由于 React的设计思想极其独特，属于革命性创新，性能出众，代码逻辑却非常简单。所以，越来越多的人开始关注和使用，认为它可能是将来 Web 开发的主流工具。
 
-[阮一峰-React 技术栈系列教程](http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html)
+这个项目本身也越滚越大，从最早的UI引擎变成了一整套前后端通吃的 Web App 解决方案。衍生的 React Native 项目，目标更是宏伟，希望用写 Web App 的方式去写 Native App。如果能够实现，整个互联网行业都会被颠覆，因为同一组人只需要写一次 UI ，就能同时运行在服务器、浏览器和手机。
 
-[菜鸟教程|react教程](http://www.runoob.com/react/react-tutorial.html)
+**特点：**
 
-[react中文社区](http://react-china.org/)
+1. 声明式设计：React采用声明范式，可以轻松描述应用。
+2. 高效：React通过对DOM的模拟，最大限度地减少与DOM的交互。
+3. 灵活：React可以与已知的库或框架很好地配合。
 
-[官方文档](http://reactjs.cn/react/docs/getting-started-zh-CN.html)
+##### 一些好的学习途径：
 
-#### react入门知识储备
+> [阮一峰-React 技术栈系列教程](http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html)
+>
+> [菜鸟教程|react教程](http://www.runoob.com/react/react-tutorial.html)
+>
+> [react中文社区](http://react-china.org/)
+>
+> [官方文档](http://reactjs.cn/react/docs/getting-started-zh-CN.html)
+>
 
-[ES6](http://es6.ruanyifeng.com/)
+
+
+### react入门知识储备
+
+##### [ES6](http://es6.ruanyifeng.com/)
 
 非必须，但最少需要知道const，let和箭头函数。
 
-webpack&babel
+##### [Webpack](http://webpackdoc.com/) & [Babel](http://babeljs.cn/)
 
 至少需要能够看得懂配置
 
-#### react两种使用方法
 
-##### 浏览器渲染
+
+### react两种前端使用方法
+
+##### 直接使用
 
 通过script标签引入
 
@@ -57,7 +74,7 @@ webpack&babel
 
 ##### webpack打包编译
 
-安装node环境，使用npm安装
+安装node环境，使用npm安装依赖
 
 脚手架快速搭建开发环境
 
